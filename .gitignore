@@ -6,3 +6,4 @@ config.json
 
 # Compiled Binaries
 wh-engine
+bin/
