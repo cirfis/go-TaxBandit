@@ -1,0 +1,25 @@
+{
+  "company_profile": {
+    "legal_name": "YOUR_COMPANY_NAME_INC.",
+    "ein": "00-0000000",
+    "title": "Your Corporate Title"
+  },
+  "payroll_parameters": {
+    "gross_wage_cents": 0,
+    "net_paycheck_cents": 0,
+    "periodicity": "monthly",
+    "annual_expected_gross_cents": 0
+  },
+  "statutory_taxes": [
+    {
+      "name": "Federal FICA",
+      "ledger_account": "Liabilities:Tax:FederalFICA",
+      "amount_cents": 0
+    }
+  ],
+  "infrastructure_endpoints": {
+    "godbledger_grpc": "127.0.0.1:50051",
+    "taxbandits_auth_url": "https://testoauth.expressauth.net/v2/tbsauth",
+    "taxbandits_api_url": "https://testapi.taxbandits.com/v1.6.1"
+  }
+}
