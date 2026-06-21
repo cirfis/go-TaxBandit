@@ -1,5 +1,8 @@
-wh_config.json
-config.json
+# Architecture Security
 .env
 *.env
+wh_config.json
+config.json
+
+# Compiled Binaries
 wh-engine
