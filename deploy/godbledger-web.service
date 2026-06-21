@@ -1,0 +1,11 @@
+[Unit]
+Description=GoDBLedger Web UI
+After=godbledger.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/godbledger-web --grpc-addr=localhost:50051 --http-addr=localhost:3000
+Restart=always
+
+[Install]
+WantedBy=default.target

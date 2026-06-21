@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Payroll Compliance Engine on the 1st
+
+[Timer]
+# Runs at midnight on the 1st of every month
+OnCalendar=*-*-01 00:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

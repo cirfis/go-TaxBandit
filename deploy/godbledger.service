@@ -1,0 +1,11 @@
+[Unit]
+Description=GoDBLedger gRPC Backend
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/godbledger --db=/home/cirfis/.local/share/godbledger/ledger.db --listen=localhost:50051
+Restart=always
+
+[Install]
+WantedBy=default.target

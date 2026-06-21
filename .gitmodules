@@ -1,0 +1,6 @@
+[submodule "modules/godbledger"]
+	path = modules/godbledger
+	url = https://github.com/darcys22/godbledger.git
+[submodule "modules/godbledger-web"]
+	path = modules/godbledger-web
+	url = https://github.com/darcys22/godbledger-web.git
