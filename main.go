@@ -34,7 +34,7 @@ import (
 	"strings"
 	"time"
 
-	pb "github.com/darcys22/godbledger/proto"
+        pb "github.com/darcys22/godbledger/proto/transaction"
 	"google.golang.org/grpc"
 )
 
