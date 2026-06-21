@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/cirfis/go-TaxBandit/internal/config"
-	pb "github.com/darcys22/godbledger/proto"
+        pb "github.com/darcys22/godbledger/proto/transaction"
 	"google.golang.org/grpc"
 )
 
