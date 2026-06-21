@@ -1,0 +1,8 @@
+[Unit]
+Description=go-TaxBandit Invariant Automation Engine
+After=network.target godbledger.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=%h/.config/wh-engine/.env
+ExecStart=/usr/local/bin/wh-engine --month
