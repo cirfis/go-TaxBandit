@@ -1,15 +1,13 @@
 [Unit]
-Description=Washing Hands Payroll Compliance Engine
+Description=TaxBandits Payroll Compliance Engine
 After=godbledger.service
 
 [Service]
 Type=oneshot
 EnvironmentFile=%h/.config/wh-engine/.env
-
-# Run the payroll engine and
 ExecStart=/usr/local/bin/wh-engine --month
-# Ping Healthchecks.io (replace with your UUID)
-ExecStartPost=-/usr/bin/curl -fsS --retry 3 https://hc-ping.com/YOUR-UUID-HERE
+# Use a bash subshell to expand the environment variable
+ExecStartPost=/bin/bash -c 'curl -fsS --retry 3 https://hc-ping.com/${HC_UUID}'
 
 [Install]
 WantedBy=default.target
